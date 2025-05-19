@@ -17,10 +17,10 @@ int main() {
 		
 	
 		GPIOC_CRH &= ~(0xF << 20);
-		GPIOC_CRH &= ~(0x1 << 20);
-		GPIOC_CRH |= ~(0x1 << 21);
-		GPIOC_CRH &= ~(0x1 << 22);
-		GPIOC_CRH &= ~(0x1 << 23);
+		GPIOC_CRH &= ~(1U << 20);
+		GPIOC_CRH |= (1U << 21);
+		GPIOC_CRH &= ~(1U << 22);
+		GPIOC_CRH &= ~(1U << 23);
 	
 		
 		
